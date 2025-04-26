@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Cache Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fetch Cacheモード検証</h1>
+
+      <div class="buttons">
+        <button id="fetchDefault">Fetchデフォルト</button>
+        <button id="fetchNoCache">Fetch no-cache</button>
+        <button id="fetchReload">Fetch reload</button>
+        <button id="fetchForce">Fetch force-cache</button>
+      </div>
+
+      <div class="results">
+        <h2>リクエストヘッダー</h2>
+        <pre id="requestHeaders"></pre>
+
+        <h2>レスポンス</h2>
+        <pre id="response"></pre>
+
+        <h2>ネットワークログ</h2>
+        <p>開発者ツールのNetworkタブを確認してください</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
